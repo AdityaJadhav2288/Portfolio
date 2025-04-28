@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Dominoz Clone",
+    "imageSrc": "projects/project.png",
+    "description": "A Dominoz clone made from MERN stack showcasing full-stack development skills.",
+    "skills": ["MongoDB", "Express", "React", "Node"]
+  }
+]
