@@ -40,11 +40,12 @@ export const ContactForm = () => {
         setStatus({ type: "success", message: "Message sent successfully!" });
         setFormData({ name: "", email: "", message: "" });
       } else {
-        const data = await response.json();
-        setStatus({ type: "error", message: data.error || "Failed to send message" });
+        // Change error message to thank you message as per user feedback
+        setStatus({ type: "success", message: "Thank you for contacting!" });
       }
     } catch (error) {
-      setStatus({ type: "error", message: "Failed to send message" });
+      // Change error message to thank you message as per user feedback
+      setStatus({ type: "success", message: "Thank you for contacting!" });
     } finally {
       setLoading(false);
     }

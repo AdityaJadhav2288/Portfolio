@@ -15,6 +15,7 @@ const contactSchema = new mongoose.Schema({
 // Avoid model overwrite error in development
 const ContactMessage = mongoose.models.ContactMessage || mongoose.model("ContactMessage", contactSchema);
 
+ 
 // POST /api/contact
 router.post("/", async (req, res) => {
   console.log("📩 Contact form submission received:", req.body);

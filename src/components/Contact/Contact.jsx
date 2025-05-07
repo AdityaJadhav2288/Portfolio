@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
+import { ContactForm } from "../ContactForm/ContactForm";
 
 export const Contact = () => {
   return (
@@ -10,6 +11,7 @@ export const Contact = () => {
         <h2>Contact</h2>
         <p>Feel free to reach out!</p>
       </div>
+      <ContactForm />
       <ul className={styles.links}>
         <li className={styles.link}>
           <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
